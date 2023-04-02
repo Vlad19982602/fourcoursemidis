@@ -1,0 +1,26 @@
+{
+  "name": "fourcoursemidis",
+  "version": "1.0.0",
+  "description": "test project for midis",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Vlad19982602/fourcoursemidis.git"
+  },
+  "author": "Vlad",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Vlad19982602/fourcoursemidis/issues"
+  },
+  "homepage": "https://github.com/Vlad19982602/fourcoursemidis#readme",
+  "devDependencies": {
+    "browser-sync": "^2.29.0",
+    "core-js": "^3.29.1",
+    "gulp": "^4.0.2",
+    "webpack": "^5.76.2",
+    "webpack-stream": "^7.0.0"
+  }
+}
