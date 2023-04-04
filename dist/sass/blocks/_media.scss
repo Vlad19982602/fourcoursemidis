@@ -1,0 +1,402 @@
+@media (max-width: 992px) {
+	.nav {
+		&__man {
+			right: 9%;
+			top: 15%
+		}
+		&__basket {
+			right: 35px;
+			top: 15%;
+		}
+		&__list {
+			width: 455px;
+		}
+		&__item {
+			margin-top: -25px;
+			font-size: 14px;
+			width: 140px;
+		}
+	}
+	.shop {
+		padding: 0 0 0 0px;
+		height: 420px;
+		&__wrapper {
+			grid-template: repeat(1, 40%) / repeat(2, 40%);
+			justify-content: center;
+		}
+	}
+	.electric {
+		grid-template: repeat(1, 380px) / repeat(3, 31%);
+		column-gap: 10px;
+		&__img {
+			width: 100%;
+		}
+		&__title {
+			padding-top: 13px;
+		}
+		&__descr {
+			padding-top: 85px;
+		}
+	}
+	.accesories {
+		&__item {
+			width: 159px;
+		}
+		&__img {
+			&-1 {
+				width: 162px;
+			}
+			&-2 {
+				width: 162px;
+			}
+			&-3 {
+				width: 162px;
+			}
+			&-4 {
+				width: 162px;
+			}
+			&-5 {
+				width: 162px;
+			}
+		} 
+	}
+	.recomendation {
+		&__wrapper {
+			grid-template: repeat(1, 330px) / repeat(4, 20%);
+		}
+	}
+	.footer {
+		&__img {
+			margin-right: 120px;
+		}
+		&__links {
+			padding-left: 105px;
+		}
+	}
+}
+@media (max-width: 769px) {
+	.promo {
+		&__wrapper {
+			width: 100%;
+		}
+	}
+	.showup {
+		min-height: 800px;
+		.play {
+			top: 20px;
+		}
+		&__wrapper {
+			display: grid;
+			grid-template: repeat(2, 380px) / repeat(1, 100%);
+			justify-items: center;
+			row-gap: 20px;
+		}
+	}
+	.variables {
+		grid-auto-columns: 388px;
+		grid-auto-rows: 388px;
+		grid-template-rows: repeat(1, 400px);
+		grid-template-columns: repeat(1, 388px);
+		row-gap: 20px;
+		justify-content: center;
+	}
+	.section__footer {
+		&-wrapper {
+			justify-content: space-between;
+		}
+		&-item {
+			display: block;
+			margin: auto;
+			margin-left: 2%;
+		}
+		&-item img {
+			width: 88%;
+		}
+	}
+	.electric {
+		grid-template: repeat(1, 45%)/repeat(2, 40%);
+		column-gap: 30px;
+		justify-content: center;
+		min-height: 700px;
+		&__img {
+			width: 100%;
+		}
+		div {
+			position: absolute;
+			margin-left: 100px;
+			width: 340px;
+			height: 340px;
+			margin-top: 200px;
+		}
+		&__title {
+			width: 280px;
+		}
+		&__descr {
+			width: 340px;
+		}
+	}
+	.shop {
+		min-height: 920px;
+		&__wrapper {
+			grid-template-columns: 500px;
+			row-gap: 80px;
+			justify-content: center;
+		}
+	}
+	.nav {
+		&__list {
+			position: fixed;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			top: 0;
+			left: -100%;
+			width: 50%;
+			height: 100vh;
+			padding: 20px 15px;
+			background-color: rgba(0,0,0, .8);
+			transition: 0.6s all;
+			&-active {
+				left: -122px;
+				z-index: 3;
+			}
+		}
+		&__item {
+			padding-right: 0;
+			border: none;
+			margin: 10px 0;
+			&:hover {
+				transform: scale(1.2);
+			}
+		}
+		&__link {
+			font-size: 14px;
+			line-height: 13px;
+			letter-spacing: 0px;
+			color: #fff;
+			z-index: 1;
+		}
+		&__man {
+			right: 21%;
+			top: 14%;
+		}
+		&__basket {
+			right: 15%;
+			top: 14%;
+		}
+	}
+	.hamburger {
+		display: block;
+		position: absolute;
+		right: 19px;
+		top: 50px;
+		transform: translateX(-50%);
+		width: 26px;
+		height: 12px;
+		span {
+			display: block;
+			height: 2px;
+			width: 100%;
+			background-color: #000;
+			margin-bottom: 2px;
+			transition: 0.5s all;
+		}
+		&__active {
+			span {
+				margin-bottom: -2px;
+				&:nth-child(1) {
+					transform: translateY(3px) rotate(-45deg);
+				}
+				&:nth-child(2) {
+					display: none;
+				}
+				&:nth-child(3) {
+					transform: translateY(3px) rotate(45deg);
+				}
+			}
+		}
+	}
+	.choice {
+		&__style {
+			height: 70px;
+			width: 570px;
+		}
+	}
+	.accesories {
+		&__wrapper {
+			display: grid;
+			grid-template: repeat(3, 250px)/repeat(2, 240px);
+			justify-items: center;
+		}
+		&__img-1 {
+			width: 192px;
+		}
+		&__img-2 {
+			width: 192px;
+		}
+		&__img-3 {
+			width: 192px;
+		}
+		&__img-4 {
+			width: 192px;
+		}
+		&__img-5 {
+			width: 192px;
+		}
+		&__img-6 {
+			width: 192px;
+		}
+		.slider-btn {
+			display: none;
+		}
+	}
+	.recomendation {
+		margin-top: 50px;
+	}
+	.recomendation__wrapper {
+		grid-template: repeat(2, 330px) / repeat(2, 238px);
+	}
+	.footer {
+		margin-left: 0;
+		&__item {
+			padding-left: 30px;
+			width: 220px;
+			&-descr {
+				font-size: 10px;
+			}
+		}
+		&__item:last-child {
+			width: 200px;
+		}
+		&__item:last-child a {
+			display: none;
+		}
+		&__img {
+			margin-right: 10px;
+		}
+		&__links {
+			display: grid;
+			padding-left: 80px;
+			grid-template: repeat(2, 30px)/repeat(4, 35%);
+		}
+		&__bottom {
+			&-prec {
+				width: 42px;
+			}
+			&-right {
+				width: 9%;
+			}
+			&-name {
+				width: 50px;
+			}
+			&-terms {
+				width: 60px;
+			}
+			&-built {
+				width: 36px;
+			}
+		}
+	}
+}
+@media (max-width: 576px) {
+	.nav {
+		&__man {
+			right: 17%;
+		}
+	}
+	.promo {
+		&__wrapper {
+			width: 65%;
+		}
+	}
+	.choice {
+		min-height: 223px;
+		&__descr {
+			font-weight: 300;
+			font-size: 20px;
+		}
+		&__style {
+			height: 100px;
+			width: 80%;
+		}
+		.divider {
+			margin-top: 35px;
+		}
+	}
+	.shop {
+		min-height: 420px;
+		&__wrapper {
+			grid-template: repeat(2, 40%)/repeat(2, 35%);
+		}
+	}
+	.skates {
+		&__wrapper {
+			width: 330px;
+		}
+	}
+	.electric {
+		background: aquamarine;
+		grid-template: repeat(2, 380px)/repeat(1, 300px);
+		justify-content: center;
+		row-gap: 20px;
+		div {
+			display: none;
+		}
+	}
+	.showup {
+		min-height: 800px;
+		&__wrapper {
+			display: grid;
+			grid-template: repeat(2, 380px) / repeat(1, 100%);
+			justify-items: center;
+			row-gap: 20px;
+		}
+	}
+	.accesories {
+		&__wrapper {
+			grid-template: repeat(3, 250px)/repeat(2, 240px);
+			justify-items: center;
+		}
+		&__img-1 {
+			width: 192px;
+		}
+		&__img-2 {
+			width: 192px;
+		}
+		&__img-3 {
+			width: 192px;
+		}
+		&__img-4 {
+			width: 192px;
+		}
+		&__img-5 {
+			width: 192px;
+		}
+		&__img-6 {
+			width: 192px;
+		}
+	}
+	.recomendation {
+		margin-top: 50px;
+		&__wrapper {
+			grid-template: repeat(2, 330px)/repeat(2, 208px);
+		}
+	}
+	.footer {
+		&__img {
+			width: 144px;
+			height: 130px;
+		}
+		&__item {
+			padding-left: 71px;
+		}
+		&__item:last-child {
+			display: none;
+		}
+		&__links {
+			display: grid;
+			padding-left: 20px;
+			grid-template: repeat(2, 30px)/repeat(4, 35%);
+		}
+	}
+}
