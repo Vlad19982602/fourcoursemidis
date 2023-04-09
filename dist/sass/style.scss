@@ -8,6 +8,8 @@
 @import 'blocks/slider-main';
 @import 'blocks/tabs';
 @import 'blocks/btns';
+@import 'blocks/prof-orientation-form-section';
+@import 'blocks/documents-slider-section';
 
 
 
@@ -22,6 +24,10 @@ article, aside, footer, header, nav, section {
     display: block;
 }
 
+section {
+    margin-bottom: 70px;
+}
+
 button, input, optgroup, select, textarea {
     line-height: inherit;
 }
@@ -32,14 +38,51 @@ button, input, optgroup, select, textarea {
     font-family: inherit;
 }
 
+[type=checkbox], [type=radio] {
+    box-sizing: border-box;
+    padding: 0;
+}
+
 input {
     max-width: 352px;
     box-shadow: none;
     padding: 0;
 }
 
+h3 {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.22;
+}
+h5 {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+form {
+    display: block;
+    margin-top: 0em;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+img {
+    border-style: none;
+}
+
+.link, a {
+    color: #000;
+    text-decoration: underline;
+}
+
+.checkbox, .form-attach__label {
+    cursor: pointer;
+}
+
 .myclass {
-	height: 1200px;
+	height: 600px;
 	background-color:hsla(0, 0%, 100%, .6)																	3000;
 }
 

@@ -45,3 +45,35 @@
     }
 }
 
+.btn:focus, .btn:hover {
+    color: $main-color;
+    background: transparent;
+    border: 1px solid $main-color;
+}
+
+.btn_light_for-bg_anim {
+    max-width: 224px;
+    border: 2px solid #fff !important;
+    color: #fff;
+    font-weight: 700;
+}
+
+.btn_light_for-bg_anim:hover {
+    padding-right: 50px !important;
+    color: #fff;
+    background: transparent;
+    border: 2px solid #fff !important;
+}
+
+.btn_light_for-bg_anim:hover:after {
+    content: "";
+    background: url('../../img/main-sliders/download-arrow-w-b.svg') no-repeat;
+    position: absolute;
+    top: 11px;
+    right: 0;
+    width: 47px;
+    height: 18px;
+    transition-duration: .3s;
+    transform: translateX(-13px);
+    opacity: 1;
+}
