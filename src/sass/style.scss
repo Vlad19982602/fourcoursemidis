@@ -10,6 +10,12 @@
 @import 'blocks/btns';
 @import 'blocks/prof-orientation-form-section';
 @import 'blocks/documents-slider-section';
+@import 'blocks/header-mobile';
+@import 'blocks/main-menu-extended1';
+@import 'blocks/carrier';
+@import 'blocks/carousel';
+@import 'blocks/arrow';
+@import 'blocks/gallery';
 
 
 
@@ -105,6 +111,67 @@ body > .flow-container {
     flex: 1 0 auto;
     min-height: 0;
     background: #fff;
+}
+
+.burger__part {
+    margin-bottom: 7px;
+    transition-duration: .3s;
+}
+
+.burger__part, .menuIsOpened .burger .burger__part {
+    background: #000;
+    height: 3px;
+    width: 30px;
+}
+.burger, .burger-block__logo {
+    position: absolute;
+    z-index: 990;
+    width: 33px;
+}
+
+.burger-block {
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: calc(50% - 720px);
+    cursor: pointer;
+}
+
+.burger {
+    top: 116px;
+    left: 37px;
+    height: 20px;
+    display: block;
+    position: absolute;
+    background: #000;
+    transform: translateY(-50%);
+    width: 26px;
+    cursor: pointer;
+    //&__active {
+    //    span {
+    //        margin-bottom: -3px;
+    //        &:first-child {
+    //            transform: translateY(3px) rotate(-45deg);
+    //        }
+    //        &:nth-child(2) {
+   //             display: none;
+    //        }
+   //         &:nth-child(3) {
+    //            display: none;
+   //         }
+    //        &:nth-child(4) {
+    //            transform: translateY(3px) rotate(45deg);
+   //         }
+      //  }
+    //}
+    span {
+        display: block;
+        height: 2px;
+        width: 100%;
+        background-color: #fff;
+        margin-bottom: 3px;
+        transition: 0.6s all;
+    }
 }
 
 .pageup {
