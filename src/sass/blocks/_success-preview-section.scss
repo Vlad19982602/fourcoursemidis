@@ -1,6 +1,6 @@
 .exams-container {
     /* background-color: #F2F2F2; */
-    padding: 43px 1030px;
+    padding: 43px 1010px;
     margin-left: -1000px;
     margin-right: -1000px;
     /* display: flex; */
@@ -17,7 +17,7 @@
 }
 
 .carousel3 img {
-    width: 280px;
+    width: 262px;
     height: 360px;
     display: block;
     object-fit: cover;
@@ -46,7 +46,7 @@
 }
 
 .carousel3 .next22, .next33 {
-    right: -55px;
+    right: -13px;
 }
 .carousel3 .carousel-arrow {
     top: 250px;
@@ -62,4 +62,19 @@
 .success-preview-section .btn_big {
     margin-left: auto;
     margin-right: auto;
+}
+
+
+
+
+
+.success-preview-carousel3 {
+    display: flex;
+    margin-left: 80px;
+    margin-bottom: 30px;
+}
+.success-preview-carousel3 h3 {
+    margin-top: 0;
+    font-size: 36px;
+    width: 495px;
 }

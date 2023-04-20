@@ -77,3 +77,12 @@
     transform: translateX(-13px);
     opacity: 1;
 }
+.btn_vk {
+    border: 1px solid $main-color !important;
+    color: $main-color;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.37;
+    text-transform: uppercase;
+    transition-duration: .3s;
+}
