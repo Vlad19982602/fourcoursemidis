@@ -17,6 +17,8 @@
 @import 'blocks/arrow';
 @import 'blocks/gallery';
 @import 'blocks/cabinet';
+@import 'blocks/student-life';
+@import 'blocks/success-preview-section';
 
 
 
@@ -136,6 +138,20 @@ body > .flow-container {
     top: 0;
     left: calc(50% - 720px);
     cursor: pointer;
+}
+
+.success-preview-carousel3 {
+    display: flex;
+    margin-left: 80px;
+    margin-bottom: 30px;
+}
+.success-preview-carousel3 h3 {
+    margin-top: 0;
+    font-size: 36px;
+    width: 445px;
+}
+.success-preview-carousel3 div {
+    width: 600px;
 }
 
 .burger {
