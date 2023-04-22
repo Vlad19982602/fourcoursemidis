@@ -4,5 +4,6 @@ import slider from './modules/slider.js';
 window.addEventListener('DOMContentLoaded', () => {
 
 	scrolling('.pageup');
-	slider('.slider-main__wrapper', 'horizontal', '.slider__arrow_prev', '.slider__arrow_next')
+	slider('.slider-main__wrapper', 'horizontal', '.slider__arrow_prev', '.slider__arrow_next');
+	slider('.gallery-piece', 'horizontal', '.carousel-arrow-prev22', '.carousel-arrow-next22');
 });
