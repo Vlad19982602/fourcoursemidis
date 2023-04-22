@@ -20,6 +20,9 @@
 @import 'blocks/student-life';
 @import 'blocks/success-preview-section';
 @import 'blocks/news-section';
+@import 'blocks/student-form-section';
+@import 'blocks/modal';
+@import 'blocks/footer';
 
 
 
@@ -32,6 +35,10 @@
 
 article, aside, footer, header, nav, section {
     display: block;
+}
+
+nav li, ol, ul {
+    list-style-type: none;
 }
 
 section {
@@ -107,6 +114,11 @@ body > .flow-container {
     width: 100%;
     overflow-y: auto;
     overflow-x: hidden;
+}
+
+.row {
+    display: flex;
+    width: 100%;
 }
 
 .content {

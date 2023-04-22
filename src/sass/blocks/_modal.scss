@@ -1,0 +1,19 @@
+.modal {
+    display: none;
+    max-width: 944px;
+    width: 100%;
+    padding: 78px 20px 88px;
+    background: gray;
+}
+
+.modal__heading-only {
+    margin-bottom: 50px;
+}
+.modal__heading, .modal__heading-only {
+    text-align: center;
+    font-size: 24px;
+    line-height: 1.37;
+}
+.modal__form {
+    margin-bottom: 0;
+}
