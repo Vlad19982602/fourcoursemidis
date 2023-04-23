@@ -25,12 +25,15 @@
 @import 'blocks/footer';
 
 
+@import 'blocks/breadcrumbs';
+@import 'blocks/specialties-main';
+
+
 
 * {
 	box-sizing: border-box;
 	outline: none;
 	font-family: 'Montserrat Alternates', sans-serif;
-	font-family: 'Open Sans', sans-serif;
 }
 
 article, aside, footer, header, nav, section {
@@ -122,7 +125,7 @@ body > .flow-container {
 }
 
 .content {
-    margin-top: 135px;
+    margin-top: 145px;
     position: relative;
     flex: 1 0 auto;
     min-height: 0;
