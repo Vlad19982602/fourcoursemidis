@@ -22,14 +22,8 @@
 .btn.btn_solid {
     text-transform: uppercase;
     color: #fff;
-    background: rgb(253, 126, 0);
-    border: 1px solid rgb(255, 167, 3);
-    &:hover {
-        content: '';
-        background-color: #fff;
-        border: 1px solid $main-color;
-        color: $main-color;
-    }
+    background: $truecolor;
+    border: 1px solid $truecolor;
 }
 
 .btn_mobile {
@@ -53,9 +47,9 @@
 
 .btn:hover {
     content: '';
+    color: $truecolor;
+    border: 1px solid $truecolor;
     background-color: #fff;
-    border: 1px solid $main-color;
-    color: $main-color;
 }
 
 .btn_light_for-bg_anim {
@@ -122,4 +116,26 @@
     width: 20px;
     height: 20px;
     transition-duration: .3s
+}
+
+.btn_biger {
+    max-width: 464px;
+}
+.btn.btn_orange {
+    color: $truecolor;
+    border: 1px solid $truecolor;
+}
+.btn.btn_orange:hover {
+    color: #fff;
+    border: 1px solid $truecolor;
+    background-color: $truecolor;
+}
+.page-news .btn {
+    margin: 0 auto;
+    display: block;
+}
+.news-secondary__with-video .btn {
+    margin: 85px auto 0;
+    display: block;
+    padding: 7px 25px;
 }
