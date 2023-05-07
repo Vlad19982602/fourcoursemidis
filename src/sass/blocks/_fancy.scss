@@ -1,0 +1,76 @@
+.fancybox-is-open {
+	display: none;
+}
+
+.fancybox-is-open .fancybox-stage {
+    overflow: hidden;
+	display: flex;
+	align-items: center;
+    justify-content: center;
+}
+.fancybox-stage {
+    direction: ltr;
+    overflow: visible;
+    transform: translateZ(0);
+    z-index: 99994;
+}
+
+.fancybox-content {
+    background: #fff;
+    display: inline-block;
+    margin: 0;
+    max-width: 100%;
+    overflow: auto;
+    padding: 44px;
+    position: relative;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.fancybox-content .fancybox-close-small {
+    width: 70px;
+    height: 70px;
+    font-size: 0;
+    overflow: hidden;
+}
+.fancybox-slide--html .fancybox-close-small {
+    padding: 10px;
+    right: 0;
+    top: 0;
+}
+
+.form-details {
+    margin-top: 22px;
+    display: inline-block;
+    margin-bottom: 11px;
+}
+
+
+
+.modal {
+    display: none;
+    max-width: 944px;
+    width: 100%;
+    padding: 78px 20px 88px;
+    background: #a0a0a0;
+}
+.fancybox-content .fancybox-close-small-2 {
+    background: transparent;
+    border: 0;
+    border-radius: 0;
+    color: #ccc;
+    cursor: pointer;
+    opacity: .8;
+    padding: 8px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 401;
+}
+
+.modal__body .checkbox__emulator {
+	left: 0;
+}
+.modal__body .checkbox__input {
+	display: none;
+}

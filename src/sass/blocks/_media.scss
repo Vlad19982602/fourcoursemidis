@@ -400,3 +400,10 @@
 		}
 	}
 }
+
+@media (max-height: 576px) {
+	.fancybox-slide {
+		padding-left: 6px;
+		padding-right: 6px;
+	}
+}

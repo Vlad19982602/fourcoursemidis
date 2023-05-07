@@ -5,3 +5,12 @@
     padding: 24px 50px 30px;
     color: #fff;
 }
+
+.student-form .invalid {
+    background-color: red;
+    border: 2px solid #fff;
+}
+.student-form [type=checkbox].invalid {
+    background: none;
+    border: none;
+}
