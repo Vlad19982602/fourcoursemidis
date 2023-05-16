@@ -153,6 +153,19 @@ body > .flow-container {
     width: 33px;
 }
 
+.burger__active {
+    top: 116px;
+    left: 37px;
+    height: 20px;
+    display: block;
+    position: absolute;
+    background: #000;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 26px;
+    cursor: pointer;
+}
+
 .burger-block {
     position: fixed;
     z-index: 1000;
