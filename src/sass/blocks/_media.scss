@@ -4326,7 +4326,7 @@ input::-ms-clear {
 
 .btn_pay:before {
     content: "";
-    background: url(/local/templates/delement/frontend/assets/styles/../images/pay.svg) no-repeat;
+    background: url('../../img/') no-repeat;
     position: absolute;
     top: calc(50% - 12px);
     left: 20px;
@@ -7069,18 +7069,13 @@ section.department-section_h-e:nth-child(2n) .department-section_h-e__img-block 
     margin-left: 8px
 }
 
-.visually-impaired--high-contrast-2 .footer .socials a {
-    -webkit-filter: invert();
-    filter: invert()
-}
-
 .footer .footer__documentation {
     margin-top: 27px
 }
 
 @media (max-width: 700px) {
     .footer .footer__documentation-link {
-        font-size: var(--f-s-12);
+        font-size: 12px;
         line-height: 1.33
     }
 }
@@ -8497,11 +8492,6 @@ header.main-header1 {
 .visually-impaired--font-large .main-menu-extended1 .contacts .socials a img {
     -webkit-transform: scale(2);
     transform: scale(2)
-}
-
-.visually-impaired--high-contrast-2 .main-menu-extended1 .contacts .socials a {
-    -webkit-filter: invert();
-    filter: invert()
 }
 
 @media (max-width: 1024px) {
