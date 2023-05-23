@@ -1,5 +1,6 @@
 const scrolling = (upSelector) => {
 	const upElem = document.querySelector(upSelector);
+	
 
 	window.addEventListener('scroll', () => {
 		if (document.documentElement.scrollTop > 1850) {

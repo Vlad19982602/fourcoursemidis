@@ -7,7 +7,6 @@
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/animate.min.css">
 	<link rel="stylesheet" href="css/style.min.css">
-    <link rel="stylesheet" href="css/contacts.min.css">
 	<title>project</title>
     <script src="https://www.youtube.com/iframe_api"></script>
 </head>
@@ -334,8 +333,8 @@
                 </nav>
             </section>
         </header>
-        <div id="up" class="content">
-            <main class="main-container">
+        <div class="content">
+            <main id="up" class="main-container">
                 <section class="slider-main swiper-container">
                     <div class="slider__items">
                         <div class="slider__item slider__item_active">
@@ -1231,17 +1230,13 @@
                 <section class="prof-orientation-form-section">
                     <h3>Нужна консультация по профориентации?</h3>
                     <h5>Оставляйте контакты — и мы поможем</h5>
-                    <form class="student-form" data-form="" novalidate="" data-js-id="stat_studentom_midis">
-                        <input type="hidden" name="form_name" value="Нужна консультация по профориентации - Главная">
-                        <input type="hidden" name="WEB_FORM_ID" value="1">
-                        <input type="hidden" name="sessid" id="sessid_3" value="7f622f18d73e24d2f443805bdfdf799d">        <input type="hidden" name="site_id" value="s1">
-                        <input type="hidden" name="lang" value="ru">
+                    <form class="student-form">
                         <div class="form-row">
                             <div class="form-col">
-                                <input type="text" class="student-form__input form-input" placeholder="Имя" name="form_text_1" required="" data-input-placeholder="Имя" data-input-required="name">
+                                <input type="text" class="student-form__input form-input" placeholder="Имя" name="form_text_1" required="">
                             </div>
                             <div class="form-col">
-                                <input type="tel" class="student-form__input form-input inputmask" name="form_text_2" placeholder="Телефон" required="" data-input-placeholder="Телефон" data-input-required="phone">
+                                <input class="student-form__input form-input inputmask" type=text name=phone placeholder="Ваш телефон" required="">
                             </div>
                             <div class="form-col">
                                 <button class="btn btn_light_for-bg_anim" id="buttonWantBeStudent">
@@ -1944,10 +1939,10 @@
                 <input type="hidden" name="lang" value="ru">
                 <div class="form-row">
                     <div class="form-col">
-                        <input type="text" class="student-form__input form-input" placeholder="Имя" name="form_text_1" required="" data-input-placeholder="Имя" data-input-required="name">
+                        <input type="text" class="student-form__input form-input" placeholder="Имя" name="form_text_1" required="">
                     </div>
                     <div class="form-col">
-                        <input type="tel" class="student-form__input form-input inputmask" name="form_text_2" placeholder="Телефон" required="" data-input-placeholder="Телефон" data-input-required="phone">
+                        <input class="student-form__input form-input inputmask" type=text name=phone placeholder="Ваш телефон" required>
                     </div>
                     <div class="form-col">
                         <button class="btn btn_light_for-bg_anim" id="buttonWantBeStudent">
@@ -2215,7 +2210,7 @@
             </div>
         </div>
         <div class="modal__body">
-            <form class="modal__form form" data-form="" novalidate="" data-ajax-success-form="#modal-success-subscribe">
+            <form class="modal__form form" data-form="" action="#">
                 <input type="hidden" name="action" value="subscribe" wfd-invisible="true">
                 <div class="form-row">
                     <div class="form-col">
@@ -2247,7 +2242,7 @@
                 </div>
                 <div class="form-row form-row--confirm">
                     <div class="form-col">
-                        <button class="btn btn_solid btn_form">Подписаться</button>
+                        <button name="submit" type="submit" class="btn btn_solid btn_form">Подписаться</button>
                     </div>
                 </div>
             </form>
@@ -2266,5 +2261,6 @@
 		</svg>
 	</a>
     <script type="module" src="js/main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
 </body>
 </html>

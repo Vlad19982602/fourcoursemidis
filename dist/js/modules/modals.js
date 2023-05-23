@@ -16,19 +16,23 @@ const modals = () => {
             });
         });
 
-        close.addEventListener('click', () => {
-            modal.style.display = "none";
-            document.body.style.overflow = "";
-            //document.body.classList.remove('modal-2');
-        });
-
-        modal.addEventListener('click', (e) => {
-            if (e.target === modal) {
+        if(close) {
+            close.addEventListener('click', () => {
                 modal.style.display = "none";
-                document.body.style.overflow = ""; 
+                document.body.style.overflow = "";
                 //document.body.classList.remove('modal-2');
-            }
-        });
+            });
+        }
+
+        if(modal) {
+            modal.addEventListener('click', (e) => {
+                if (e.target === modal) {
+                    modal.style.display = "none";
+                    document.body.style.overflow = ""; 
+                    //document.body.classList.remove('modal-2');
+                }
+            });
+        }
     }
 
     bindModal('.popup-modal', '.modal--feedback', '.fancybox-content .fancybox-close-small-2');
