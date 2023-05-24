@@ -3,6 +3,7 @@ import slider from './modules/slider.js';
 import modals from './modules/modals.js';
 import forms from './modules/forms.js';
 import mask from './modules/mask.js';
+import tabs from './modules/tabs.js';
 
 window.addEventListener('DOMContentLoaded', () => {
 
@@ -12,4 +13,5 @@ window.addEventListener('DOMContentLoaded', () => {
 	modals();
 	forms();
 	mask('[name=phone]');
+	tabs('.specialities-block__tabs', '.tabs-nav__item', '.tabs-content__item  ', 'current');
 });
