@@ -13,15 +13,18 @@ const tabs = (headerSelector, tabSelector, contentSelector, activeClass, display
         });
     }
 
-    function showTabContent(i = 0) {
-        content[i].style.display = display;
-        tab[i].classList.add(activeClass);
+    function showTabContent(i) {
+        if (content[i]) {
+            content[i].style.display = display;
+            tab[i].classList.add(activeClass);
+        }
     }
 
     hideTabContent();
     showTabContent();
 
-    header.addEventListener('click', (e) => {
+    if (header) {
+        header.addEventListener('click', (e) => {
         const target = e.target;
         if (target &&
             (target.classList.contains(tabSelector.replace(/\./, "")) || 
@@ -34,6 +37,7 @@ const tabs = (headerSelector, tabSelector, contentSelector, activeClass, display
             });
         }
     });
+    }
 };
 
 export default tabs;
